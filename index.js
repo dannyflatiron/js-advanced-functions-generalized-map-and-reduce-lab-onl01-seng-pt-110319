@@ -12,8 +12,8 @@ let map = function(array, codeBlock) {
 
 let reduce = function(array, codeBlock, startingPoint) {
     // reduce(a, b)
-    let sp = (!!startingPoint) ? startingPoint : array[0]
-    let i = (!!startingPoint) ? 0 : 1
+    let sp = (startingPoint) ? startingPoint : array[0]
+    let i = (startingPoint) ? 0 : 1
 
     let m 
     for(; i < array.length; i++){
